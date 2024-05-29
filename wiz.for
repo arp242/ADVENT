@@ -89,6 +89,6 @@ C  WILL BREAK IN 2101
       CHARACTER*5 S
       DO 1 I=1,5
 1       IF(S(I:I).GE.'a'.AND.S(I:I).LE.'z')
-       1 S(I:I)=CHAR(ICHAR(S(I:I))-32)
+     1 S(I:I)=CHAR(ICHAR(S(I:I))-32)
       END
 
