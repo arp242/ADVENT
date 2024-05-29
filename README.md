@@ -8,11 +8,23 @@ https://www.ifarchive.org/indexes/if-archive/games/source/
 
 I had to make a few small changes to the Fortran code to make it compile with
 gfortran 13.2, I added a Makefile, and changed the advent.bin location from
-/etc/advent.bin to ./advent.bin, which seems like a slightly more sensible
-default.
+/etc/advent.bin to ./advent.bin (which seems like a slightly more sensible
+default), and converted the text strings to more common English case.
 
 Type `make` to compile. Default is to make a statically linked binary; use `make
 STATIC=` to disable.
+
+At present there are four commits:
+
+1. The original source.
+2. Dan Nelson's 2016 changes to port to Fortran77.
+3. My 2024 changes to make it work.
+4. Converting advent.dat from all-caps to regular caps.
+
+You can compile from the third commit if you want the original ALL-CAPS
+EXPERIENCE, but I found it quite jarring and difficult to read.
+
+I may force-push in the future to keep this linear history.
 
 Dan Nelson's README follows, with a few small modifications.
 
